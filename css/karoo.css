@@ -4667,7 +4667,6 @@ body {
   color: #3A3A3A;
   font-size: 16px;
   background: #e5e5e5;
-  position: relative;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "clig", "onum"; }
@@ -4908,7 +4907,8 @@ body.single-post .post-content .social-menu i.fa-envelope.image-modal-icon:befor
   background: white;
   z-index: 9;
   position: fixed;
-  top: 0; }
+  top: 0;
+  left: 0; }
   .headroom--big {
     height: auto;
     padding: 1rem 2rem .5rem; }

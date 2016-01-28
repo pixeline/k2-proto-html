@@ -37,7 +37,6 @@ body {
 	color:$black;
     font-size: 16px;
     background:$background-grey;
-    position:relative;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-feature-settings: "liga", "clig", "onum";
@@ -242,6 +241,7 @@ button.pure-button-primary{
 	z-index:9;
 	position:fixed;
 	top:0;
+	left:0;
 	@extend .box-shadow;
 	&--big{
 		height:auto;
