@@ -36,11 +36,11 @@
     </script>
 	<header id="js-site-header" class="headroom headroom--small hide-from-print">
         <div class="header pure-g maximum-width">
-            <div class="pure-u-1 pure-u-lg-1-4 logo-home">
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-4 logo-home">
                 <a href="/"><img src="img/logo-karoo-clean.svg" alt="Karoo - Ecosystème Culturel"></a>
             </div>
 
-            <div class="pure-u-1 pure-u-lg-1-2 menus-milieu">
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 menus-milieu">
                 <nav class="pure-menu pure-menu-horizontal rubrique-menu pure-menu-scrollable">
                     <ul class="rubriques pure-menu-list">
                         <li class="pure-menu-item">
@@ -69,8 +69,8 @@
                     </ul>
                 </nav>
 
-                <div class="pure-menu pure-menu-horizontal breadcrumb-menu pure-menu-scrollable hide-for-mobile">
-                    <ul class="breadcrumb ">
+                <div class="pure-menu pure-menu-horizontal breadcrumb-menu">
+                    <ul class="breadcrumb pure-menu-list">
                         <li class="pure-menu-item">
                             <a href="path/to/file">Accueil</a> <span class="sep">&gt;</span>
                         </li>
@@ -127,14 +127,14 @@
             <div class="pure-g">
                 <div class="pure-u-1 pure-u-lg-3-4 post-content-wrapper">
                     <div class="pure-g post-introduction">
-                        <div class="pure-u-5-12">
+                        <div class="pure-u-md-5-12">
                             <figure class="post-sharing-zone">
                                 <img src="img/post-thumbnail-300x300.png" alt="" class="pure-img-responsive">
 
                                 <div class="sharing-cta">
                                     <span class="ui-title">Partager cet article sur</span>
 
-                                    <div class="pure-menu pure-menu-horizontal">
+                                    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
                                         <ul class="pure-menu-list social-menu">
                                             <li class="pure-menu-item">
                                                 <a href="path/to/file" class="pure-menu-link facebook"><i class="fa fa-facebook"></i></a>
@@ -143,17 +143,14 @@
                                             <li class="pure-menu-item">
                                                 <a href="path/to/file" class="pure-menu-link twitter"><i class="fa fa-twitter"></i></a>
                                             </li>
-
                                             <li class="pure-menu-item">
-                                                <a href="path/to/file" class="pure-menu-link linkedin"><i class="fa fa-linkedin"></i></a>
+                                                <a href="path/to/file" class="pure-menu-link reddit"><i class="fa fa-reddit-alien"></i></a>
                                             </li>
-
                                             <li class="pure-menu-item">
                                                 <a href="path/to/file" class="pure-menu-link googleplus"><i class="fa fa-google-plus"></i></a>
                                             </li>
-
                                             <li class="pure-menu-item">
-                                                <a href="path/to/file" class="pure-menu-link reddit"><i class="fa fa-reddit-alien"></i></a>
+                                                <a href="path/to/file" class="pure-menu-link linkedin"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -161,7 +158,7 @@
                             </figure>
                         </div>
 
-                        <div class="pure-u-7-12">
+                        <div class="pure-u-md-7-12">
                             <p class="accroche">L’automne du musée des Beaux-arts de Mons (BAM) est foulé par « Verlaine, cellule 252. Turbulences poétiques » et « Parade sauvage », deux expositions aux discours forts avec pour fil rouge leur poésie singulière.</p>
                         </div>
                     </div>
@@ -278,7 +275,7 @@
 
                             <h3>Ses derniers articles</h3>
 
-                            <ul class="author-latest-list">
+                            <ol class="author-latest-list">
                                 <li>
                                     <a href="path/to/file">Voici le titre de l'article 1</a>
                                 </li>
@@ -286,7 +283,7 @@
                                 <li>
                                     <a href="path/to/file">Voici le titre de l'article 1</a>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -378,12 +375,12 @@
             <div class="pure-u-1 vignette-wide">
 	            <a href="path/to/file" class="vignette vignette--wide">
 	                <article class="pure-g">
-		                <div class="pure-u-2-3">
+		                <div class="pure-u-1-3 pure-u-md-2-3">
 			                <div class="img-clipper">
 				                <div class="image-fill" style="background-image:url(img/post-thumb-wide.jpg);"></div>
 			                </div>
 		                </div>
-		                <div class="pure-u-1-3">
+		                <div class="pure-u-2-3 pure-u-md-1-3">
 			                <div class="inner-padding">
 				                <h1>Flavien Berger<br>Rendez-vous sur une planète inconnue</h1>
 								<p class="meta--author"><img src="img/portrait-auteur2.jpg" class="portrait-author" alt=""><br>par Jimmy Wodon</p>
@@ -401,29 +398,36 @@
 <div class="dark-blue-background">
 		     <nav class="sitemap maximum-width pure-g">
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-			     <a href="/categorie/cinema" class="ui-title">Cinéma</a>
+				     <div class="inner-padding">
+					     <a href="/categorie/cinema" class="ui-title">Cinéma</a>
 			     <ol>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 			     </ol>
+				     </div>
 			     </div>
 
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
 			     <a href="/categorie/musique" class="ui-title">Musique</a>
 			     <ol>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 			     </ol>
+				     </div>
 			     </div>
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
 			     <a href="/categorie/livres" class="ui-title">Livres</a>
 			     <ol>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 			     </ol>
+				     </div>
 			     </div>
 			     
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
 			     <a href="/categorie/scene" class="ui-title">Scène</a>
 			     <ol>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
@@ -438,8 +442,8 @@
 					 	<li><a href="	">Contact</a></li>
 					 	</ol>
 				 </nav>
-
-<div class="post-sharing-zone dark-blue-background">
+				 
+				 <div class="post-sharing-zone dark-blue-background">
                             <div class="sharing-cta">
                                 <span class="ui-title">Suivre Karoo</span>
 
@@ -469,10 +473,11 @@
                             </div>
                         </div>
 
-
+				     </div>
 			     </div>
 
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
 			     <a href="/categorie/art-and-ko" class="ui-title">Art & Ko</a>
 			     <ol>
 				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
@@ -483,13 +488,16 @@
 			     <ol>
 				     <li><a href="	" class="karoo-tv-play-icon"><img src="img/karootv-420x233.png" alt="" class="pure-img-responsive"></a></li>
 			     </ol>
+				     </div>
 			     </div>
 			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
 			     <a href="	" class="ui-title">Galerie</a>
 			     <ol>
 				     <li><a href="	"><img src="img/galerie-format-420x420.jpg" alt=""><br>
 					     This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
 			     </ol>
+				     </div>
 			     </div>			     
 			     
 

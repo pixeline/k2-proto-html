@@ -1,5 +1,21 @@
 // @codekit-prepend "jquery.min.2.2.0.js", "_grapher.js","_headroom.min.js","_jQuery.headroom.min.js", "_jquery.tooltipster.min.js", "_venobox.min.js";
 /* BONES */
+
+// Detect if screen is tactile.
+
+var browser = {};
+browser.hasTouchEvents = function() {
+  try {
+    document.createEvent( 'TouchEvent' );
+    return true;
+  }
+    catch( e ) {
+     return false;
+  }
+};
+
+var is_tactile = browser.hasTouchEvents();
+
 // In Web APP mode, prevent click from opening in new window
 jQuery(document).ready(function($) {
 	if (("standalone" in window.navigator) && window.navigator.standalone) {
@@ -13,6 +29,10 @@ jQuery(document).ready(function($) {
 		});
 	}
 	$('html').addClass('js');
+	if(is_tactile){
+		$('html').addClass('touch');
+		
+	}
 	// Single Article
 	if ($('body.single-post').length) {
 		var article = $('body.single-post article:first');
@@ -78,6 +98,7 @@ jQuery(document).ready(function($) {
 			iconTouch: true,
 			interactive: true,
 			interactiveTolerance: 400,
+			icon: ''
 		});
 		// Modal windows
 		/* custom settings */

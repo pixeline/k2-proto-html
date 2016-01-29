@@ -83,7 +83,7 @@ label {
     height: auto;
 }
 .maximum-width{
-	max-width:1200px;
+	max-width:90%;
 	margin:auto;
 }
 
@@ -120,6 +120,9 @@ button.pure-button-primary{
 	color:white;
 }
 /* BACK/NEXT ARROWS */
+#js-prev-next-links-wrapper{
+	display:none;
+}
 .arrow-left,
 .arrow-right{
 	display: block;
@@ -147,10 +150,13 @@ button.pure-button-primary{
 		padding-left:1rem;
 	}
 }
+
 .arrow-left{
-	left: -350px;
+	//left: -350px;
+	transform:translateX(-350px);
 	&:hover {
-		left: -20px;
+		//left: -20px;
+		transform:translateX(-20px);
 	}
 }
 .arrow-right{
@@ -193,7 +199,8 @@ button.pure-button-primary{
 	}
 }
 .breadcrumb-menu{
-	line-height: 1;
+	display:none;
+	line-height: 2rem;
 	margin:0;
 	margin-top:2rem;
 	text-align: center;
@@ -206,7 +213,7 @@ button.pure-button-primary{
 		color:$deep-blue;
 	}
 	.sep{
-		opacity: .2;
+		opacity: .6 ;
 	}
 }
 .social-menu{
@@ -256,6 +263,17 @@ button.pure-button-primary{
 	background-repeat: no-repeat;
 }
 
+.tooltipster-icon{
+	@extend .fa;
+	@extend .fa-info-circle;
+}
+
+.logo-home img{
+	@extend .pure-img-responsive;
+}
+/*
+	ARTICLE'S SITE HEADER
+*/
 .headroom{
 	@include transition(.2s linear);
 	width:100%;
@@ -291,7 +309,7 @@ button.pure-button-primary{
 		background:transparent;
 		height:3rem;
 		.breadcrumb-menu{
-			opacity:0.2;
+			opacity:0.5;
 		}
 		
 		&:hover {
@@ -317,7 +335,7 @@ button.pure-button-primary{
 		}
 		.breadcrumb-menu{
 			margin-top:0;
-			display:block;
+			
 			font-weight: 300;
 		}
 		.logo-home img{
@@ -327,8 +345,9 @@ button.pure-button-primary{
 		}
 	}	
 }
-main{
-}
+header .social-menu-wrapper{text-align: center; margin:auto;}
+
+
 /*
  * -- SPLASH STYLES --
  */
@@ -451,6 +470,47 @@ span.ui-title{
 	padding-bottom: 0;
 }
 
+aside.in-this-taxonomy{
+	display:none;
+	border-left:2px solid $light-grey ;
+	padding:.3rem 1rem;
+	max-width:250px;
+	float:right;
+	margin:0 0 2rem 2rem;
+	font-family: $font-ui;
+	font-size:rem-calc(28);
+	img{
+		display:block;
+		border-radius: 0;
+	}
+	h1{font-size:1rem;font-family:$font-ui}
+	ol{
+		padding:0;
+		margin:0;
+		counter-reset: taxonomie;
+		list-style: none;
+		font-size:rem-calc(22);
+	}
+	li{
+		&:before{
+			counter-increment: taxonomie -1;
+			content: "E0" counter(taxonomie) " ";
+			color: $mid-grey;
+			display:block;
+			font-size:rem-calc(18);
+			font-weight: 300;
+		}
+		list-style-position: inside;
+		padding:.5rem .5rem .5rem 0;
+		margin:.5rem 0;
+		line-height: 1.3;
+	}
+	li.selected a.underline{
+		font-weight:bold;
+		background: none;
+	}
+
+}
 body.single-post{
 	
 	background:white;
@@ -473,6 +533,7 @@ body.single-post{
 	}
 	.post-introduction{
 		.accroche{
+			letter-spacing: normal;
 			font-family: $serif;
 			font-size:160%;
 			line-height: 1.3;
@@ -485,46 +546,7 @@ body.single-post{
 		.ui-title{
 			color:$deep-blue;
 		}
-		aside.in-this-taxonomy{
-			border-left:2px solid $light-grey ;
-			padding:.3rem 1rem;
-			max-width:250px;
-			float:right;
-			margin:0 0 2rem 2rem;
-			font-family: $font-ui;
-			font-size:rem-calc(28);
-			img{
-				display:block;
-				border-radius: 0;
-			}
-			h1{font-size:1rem;font-family:$font-ui}
-			ol{
-				padding:0;
-				margin:0;
-				counter-reset: taxonomie;
-				list-style: none;
-				font-size:rem-calc(22);
-			}
-			li{
-				&:before{
-					counter-increment: taxonomie -1;
-					content: "E0" counter(taxonomie) " ";
-					color: $mid-grey;
-					display:block;
-					font-size:rem-calc(18);
-					font-weight: 300;
-				}
-				list-style-position: inside;
-				padding:.5rem .5rem .5rem 0;
-				margin:.5rem 0;
-				line-height: 1.3;
-			}
-			li.selected a.underline{
-				font-weight:bold;
-				background: none;
-			}
-
-		}
+		
 /*
 	// UNCOMMENT TO USE SANS-SERIF FOR CONTENT (looks good too!)
 		font-family: $font-ui;
@@ -602,14 +624,16 @@ body.single-post{
 			padding-left:2rem;
 		}
 		blockquote.big{
-			font-size:200%;
-			font-family: $serif;
-			padding:1rem;
+			margin:1rem 0;
+			padding:0 1rem;
 			padding-left:5rem;
+			font-size:200%;
+			line-height: 1.2;
+			font-family: $serif;
+
 			color: $deep-blue;
 			border-left: 10px solid $deep-blue;
-			max-width:30rem;
-			float:left;
+
 		}
 		pre {
 			background: #eee;
@@ -652,6 +676,10 @@ body.single-post{
 		padding:0;
 	}
 
+}
+.author-latest-list{
+	padding-left:0;
+	list-style: none;
 }
 .dans-cette-categorie{
 	background:$deep-blue;
@@ -799,6 +827,10 @@ body.single-post{
 	ol{
 		margin:2rem 0 3rem;
 	}
+	li{
+		line-height: 1;
+		margin-bottom:.7rem;
+	}
 	
 }
 .site-footer{
@@ -838,7 +870,11 @@ a[href$=".gif"],
 	&:hover:before{
 		opacity:1;
 	}
-
+}
+html.touch {
+	a[href$=".jpg"],a[href$=".JPG"],a[href$=".jpeg"],a[href$=".png"],a[href$=".gif"],.image-modal-icon{
+		&:before{opacity:.5;}
+	}
 }
 .karoo-tv-play-icon{
 	margin:0;
