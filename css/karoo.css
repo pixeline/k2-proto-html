@@ -2,6 +2,9 @@
 /*
 	KAROO, V2
 */
+/*-----------------
+  KAROO COLORS
+------------------*/
 .underline {
   text-decoration: none;
   text-decoration: none;
@@ -4804,7 +4807,7 @@ body.single-post .post-content .image-modal-icon:before {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out; }
 
-.transition--slow, .vignette .image-fill, .vignette:hover .image-fill {
+.transition--slow, .vignette .image-fill, .vignette article, .vignette--wide article, .vignette:hover article, .vignette:hover .image-fill {
   -moz-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   -webkit-transition: 1s ease-out;
@@ -4839,7 +4842,8 @@ label {
 .pure-menu-heading {
   padding: .5rem; }
 
-.pure-img-responsive, body.single-post .post-content img, body.single-post .finished-reading img, .vignette img {
+.pure-img-responsive, body.single-post .post-content img, body.single-post .finished-reading img, .vignette img, .site-footer img,
+.sitemap img {
   max-width: 100%;
   height: auto; }
 
@@ -4893,6 +4897,9 @@ button.pure-button-primary {
   top: 45%;
   text-decoration: none;
   font-size: 16px; }
+  .arrow-left .ui-title,
+  .arrow-right .ui-title {
+    color: #444444; }
   .arrow-left h1,
   .arrow-right h1 {
     font-size: 1rem;
@@ -5442,6 +5449,7 @@ body.single-post {
 
 .dans-cette-categorie {
   background: #243548;
+  background: #FF851B;
   padding: 3rem; }
   .dans-cette-categorie h1.ui-title {
     padding: 0 1rem;
@@ -5490,8 +5498,9 @@ body.single-post {
         text-align: center;
         position: relative;
         top: 20%;
+        -moz-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
         -webkit-transform: translateY(-20%);
-        -o-transform: translateY(-20%);
         transform: translateY(-20%);
         margin-bottom: 30%; }
   .vignette--wide {
@@ -5510,30 +5519,74 @@ body.single-post {
     .vignette--wide .img-clipper {
       height: 400px; }
   .vignette:hover {
-    box-shadow: 0px 2px 20px 3px #46678c; }
+    box-shadow: 0px 2px 20px 3px #545454; }
+    .vignette:hover article {
+      background: rgba(51, 51, 51, 0);
+      color: #FFFFFF;
+      background: -moz-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(39, 39, 39, 0.44) 24%, rgba(0, 0, 0, 0.99) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51, 51, 51, 0)), color-stop(24%, rgba(39, 39, 39, 0.44)), color-stop(100%, rgba(0, 0, 0, 0.99)));
+      background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(39, 39, 39, 0.44) 24%, rgba(0, 0, 0, 0.99) 100%);
+      background: -o-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(39, 39, 39, 0.44) 24%, rgba(0, 0, 0, 0.99) 100%);
+      background: -ms-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(39, 39, 39, 0.44) 24%, rgba(0, 0, 0, 0.99) 100%);
+      background: linear-gradient(to bottom, rgba(51, 51, 51, 0) 0%, rgba(39, 39, 39, 0.44) 24%, rgba(0, 0, 0, 0.99) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000', GradientType=0 ); }
+      .vignette:hover article .ui-title {
+        color: #FFFFFF; }
+      .vignette:hover article .inner-padding {
+        border-color: #FFFFFF; }
+    .vignette:hover h1 {
+      color: #FFFFFF; }
     .vignette:hover .image-fill {
       -moz-transform: scale(1.05);
       -ms-transform: scale(1.05);
       -webkit-transform: scale(1.05);
       transform: scale(1.05); }
 
+.dark-blue-background {
+  background: #243548;
+  color: #FFFFFF; }
+
+.site-footer,
+.sitemap {
+  padding: 3rem 0; }
+
+.sitemap a {
+  text-decoration: none;
+  color: #FFFFFF; }
+  .sitemap a:hover {
+    text-decoration: underline; }
+.sitemap .ui-title {
+  font-weight: bold;
+  font-size: 1rem; }
+.sitemap ol, .sitemap li {
+  list-style: none;
+  padding-left: 0; }
+.sitemap ol ol {
+  margin: 2rem 0 3rem; }
+
+.site-footer {
+  border-top: 1px solid #2d4259;
+  padding-top: 0;
+  color: #4f749d;
+  font-size: 90%;
+  line-height: 1.4; }
+
 .badge {
   position: relative; }
-
-.badge[data-badge]:after {
-  content: attr(data-badge);
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  font-size: .7em;
-  background: #CC0000;
-  color: white;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  line-height: 18px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px #333; }
+  .badge[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: .7em;
+    background: #CC0000;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333; }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --

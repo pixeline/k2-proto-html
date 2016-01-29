@@ -80,6 +80,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/galerie-format-420x420.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100361,
+		"inputAbbreviatedPath": "\/img\/galerie-format-420x420.jpg",
+		"outputAbbreviatedPath": "\/img\/galerie-format-420x420.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/image-positioner.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
