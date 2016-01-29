@@ -264,7 +264,10 @@ button.pure-button-primary{
 	left:0;
 	border-bottom:2px solid white;
 	@extend .box-shadow;
+	@extend .animated;
 	&--big{
+		//@include transition(height .2s linear);
+		@extend .slideDown;
 		height:auto;
 		padding:1rem 2rem .5rem;
 		.breadcrumb-menu{
@@ -281,6 +284,7 @@ button.pure-button-primary{
 	}
 
 	&--small{
+		@extend .slideUp;
 		background:transparent;
 		height:3rem;
 		.breadcrumb-menu{
