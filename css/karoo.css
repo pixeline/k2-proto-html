@@ -2417,12 +2417,13 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa, body.single-post .post-content a[href$=".jpg"]:before,
-body.single-post .post-content a[href$=".JPG"]:before,
-body.single-post .post-content a[href$=".jpeg"]:before,
-body.single-post .post-content a[href$=".png"]:before,
-body.single-post .post-content a[href$=".gif"]:before,
-body.single-post .post-content .image-modal-icon:before {
+.fa, a[href$=".jpg"]:before,
+a[href$=".JPG"]:before,
+a[href$=".jpeg"]:before,
+a[href$=".png"]:before,
+a[href$=".gif"]:before,
+.image-modal-icon:before,
+.karoo-tv-play-icon:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2479,19 +2480,21 @@ body.single-post .post-content .image-modal-icon:before {
 .fa-pull-right {
   float: right; }
 
-.fa.fa-pull-left, body.single-post .post-content a.fa-pull-left[href$=".jpg"]:before,
-body.single-post .post-content a.fa-pull-left[href$=".JPG"]:before,
-body.single-post .post-content a.fa-pull-left[href$=".jpeg"]:before,
-body.single-post .post-content a.fa-pull-left[href$=".png"]:before,
-body.single-post .post-content a.fa-pull-left[href$=".gif"]:before,
-body.single-post .post-content .fa-pull-left.image-modal-icon:before {
+.fa.fa-pull-left, a.fa-pull-left[href$=".jpg"]:before,
+a.fa-pull-left[href$=".JPG"]:before,
+a.fa-pull-left[href$=".jpeg"]:before,
+a.fa-pull-left[href$=".png"]:before,
+a.fa-pull-left[href$=".gif"]:before,
+.fa-pull-left.image-modal-icon:before,
+.fa-pull-left.karoo-tv-play-icon:before {
   margin-right: .3em; }
-.fa.fa-pull-right, body.single-post .post-content a.fa-pull-right[href$=".jpg"]:before,
-body.single-post .post-content a.fa-pull-right[href$=".JPG"]:before,
-body.single-post .post-content a.fa-pull-right[href$=".jpeg"]:before,
-body.single-post .post-content a.fa-pull-right[href$=".png"]:before,
-body.single-post .post-content a.fa-pull-right[href$=".gif"]:before,
-body.single-post .post-content .fa-pull-right.image-modal-icon:before {
+.fa.fa-pull-right, a.fa-pull-right[href$=".jpg"]:before,
+a.fa-pull-right[href$=".JPG"]:before,
+a.fa-pull-right[href$=".jpeg"]:before,
+a.fa-pull-right[href$=".png"]:before,
+a.fa-pull-right[href$=".gif"]:before,
+.fa-pull-right.image-modal-icon:before,
+.fa-pull-right.karoo-tv-play-icon:before {
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
@@ -2501,19 +2504,21 @@ body.single-post .post-content .fa-pull-right.image-modal-icon:before {
 .pull-left {
   float: left; }
 
-.fa.pull-left, body.single-post .post-content a.pull-left[href$=".jpg"]:before,
-body.single-post .post-content a.pull-left[href$=".JPG"]:before,
-body.single-post .post-content a.pull-left[href$=".jpeg"]:before,
-body.single-post .post-content a.pull-left[href$=".png"]:before,
-body.single-post .post-content a.pull-left[href$=".gif"]:before,
-body.single-post .post-content .pull-left.image-modal-icon:before {
+.fa.pull-left, a.pull-left[href$=".jpg"]:before,
+a.pull-left[href$=".JPG"]:before,
+a.pull-left[href$=".jpeg"]:before,
+a.pull-left[href$=".png"]:before,
+a.pull-left[href$=".gif"]:before,
+.pull-left.image-modal-icon:before,
+.pull-left.karoo-tv-play-icon:before {
   margin-right: .3em; }
-.fa.pull-right, body.single-post .post-content a.pull-right[href$=".jpg"]:before,
-body.single-post .post-content a.pull-right[href$=".JPG"]:before,
-body.single-post .post-content a.pull-right[href$=".jpeg"]:before,
-body.single-post .post-content a.pull-right[href$=".png"]:before,
-body.single-post .post-content a.pull-right[href$=".gif"]:before,
-body.single-post .post-content .pull-right.image-modal-icon:before {
+.fa.pull-right, a.pull-right[href$=".jpg"]:before,
+a.pull-right[href$=".JPG"]:before,
+a.pull-right[href$=".jpeg"]:before,
+a.pull-right[href$=".png"]:before,
+a.pull-right[href$=".gif"]:before,
+.pull-right.image-modal-icon:before,
+.pull-right.karoo-tv-play-icon:before {
   margin-left: .3em; }
 
 .fa-spin {
@@ -4782,12 +4787,13 @@ html, button, input, select, textarea,
     .box-shadow--inner:hover {
       box-shadow: inset 0px -17px 57px -40px rgba(0, 0, 0, 0.36) !important; }
 
-.text-shadow, body.single-post .post-content a[href$=".jpg"]:before,
-body.single-post .post-content a[href$=".JPG"]:before,
-body.single-post .post-content a[href$=".jpeg"]:before,
-body.single-post .post-content a[href$=".png"]:before,
-body.single-post .post-content a[href$=".gif"]:before,
-body.single-post .post-content .image-modal-icon:before {
+.text-shadow, a[href$=".jpg"]:before,
+a[href$=".JPG"]:before,
+a[href$=".jpeg"]:before,
+a[href$=".png"]:before,
+a[href$=".gif"]:before,
+.image-modal-icon:before,
+.karoo-tv-play-icon:before {
   text-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.24);
   text-shadow: 4px 4px 11px rgba(30, 30, 30, 0.76); }
 
@@ -4835,7 +4841,7 @@ h4,
 h5,
 h6,
 label {
-  color: #243548; }
+  color: #252B32; }
 
 .pure-menu-link,
 .pure-menu-disabled,
@@ -4877,7 +4883,7 @@ label {
 
 a.pure-button-primary,
 button.pure-button-primary {
-  background: #354e6a;
+  background: #3b444f;
   color: white; }
 
 /* BACK/NEXT ARROWS */
@@ -4967,7 +4973,7 @@ button.pure-button-primary {
     .rubrique-menu .pure-menu-selected:visited {
       color: inherit; }
   .rubrique-menu li a {
-    color: #243548; }
+    color: #252B32; }
   .rubrique-menu ul {
     margin: 0 auto; }
   .rubrique-menu li a:hover,
@@ -5011,12 +5017,12 @@ button.pure-button-primary {
     margin-top: 0; }
   .breadcrumb-menu li a,
   .breadcrumb-menu .pure-menu-link {
-    color: #243548; }
+    color: #252B32; }
   .breadcrumb-menu .sep {
     opacity: .2; }
 
 .social-menu li a {
-  color: #243548; }
+  color: #252B32; }
 .social-menu a.twitter:hover,
 .social-menu a:hover {
   background: transparent;
@@ -5033,13 +5039,13 @@ button.pure-button-primary {
 .social-menu a.linkedin:hover {
   color: #0077B5; }
 .social-menu i.fa,
-.social-menu body.single-post .post-content i.image-modal-icon:before,
-body.single-post .post-content .social-menu i.image-modal-icon:before {
+.social-menu i.image-modal-icon:before,
+.social-menu i.karoo-tv-play-icon:before {
   font-size: 1.6rem;
   margin: .5rem .1rem 1rem; }
 .social-menu i.fa.fa-envelope,
-.social-menu body.single-post .post-content i.fa-envelope.image-modal-icon:before,
-body.single-post .post-content .social-menu i.fa-envelope.image-modal-icon:before {
+.social-menu i.fa-envelope.image-modal-icon:before,
+.social-menu i.fa-envelope.karoo-tv-play-icon:before {
   font-size: 1.4rem; }
 .social-menu .email {
   font-size: 90%; }
@@ -5181,6 +5187,29 @@ span.ui-title {
   max-width: 100%;
   height: auto; }
 
+.post-sharing-zone {
+  border: 2px solid #252B32;
+  margin-top: 0.6rem;
+  padding: 0;
+  line-height: 1; }
+  .post-sharing-zone .sharing-cta {
+    padding: 0 .3rem 0; }
+  .post-sharing-zone .ui-title {
+    font-family: "jaf-bernina-sans", sans-serif;
+    margin-top: 0; }
+  .post-sharing-zone .ui-title, .post-sharing-zone a {
+    margin-top: 0;
+    color: #252B32; }
+  .post-sharing-zone .social-menu i.fa,
+  .post-sharing-zone .social-menu i.image-modal-icon:before,
+  .post-sharing-zone .social-menu i.karoo-tv-play-icon:before {
+    margin: .5rem .1rem 0.2rem; }
+
+.post-sharing-zone.end-article {
+  max-width: 300px;
+  margin: auto;
+  background: white; }
+
 /*
 	SINGLE POST CONTENT CSS
 */
@@ -5213,27 +5242,6 @@ body.single-post {
     line-height: 1.3;
     padding-top: 0;
     margin-top: 0; }
-  body.single-post .post-sharing-zone {
-    border: 2px solid #243548;
-    margin-top: 0.6rem;
-    padding: 0;
-    line-height: 1; }
-    body.single-post .post-sharing-zone .sharing-cta {
-      padding: 0 .3rem 0; }
-    body.single-post .post-sharing-zone .ui-title {
-      font-family: "jaf-bernina-sans", sans-serif;
-      margin-top: 0; }
-    body.single-post .post-sharing-zone .ui-title, body.single-post .post-sharing-zone a {
-      margin-top: 0;
-      color: #243548; }
-    body.single-post .post-sharing-zone .social-menu i.fa,
-    body.single-post .post-sharing-zone .social-menu .post-content i.image-modal-icon:before,
-    body.single-post .post-content .post-sharing-zone .social-menu i.image-modal-icon:before {
-      margin: .5rem .1rem 0.2rem; }
-  body.single-post .post-sharing-zone.end-article {
-    max-width: 300px;
-    margin: auto;
-    background: white; }
   body.single-post .post-content {
     /*
     	// UNCOMMENT TO USE SANS-SERIF FOR CONTENT (looks good too!)
@@ -5243,11 +5251,9 @@ body.single-post {
     		h1,h2,h3,h4,h5,h6{
     			font-family: $serif;
     		}
-    //*/
-    /*  ICONS IN CONTENT */
-    /* Show a Lens icon on hovering image links */ }
+    //*/ }
     body.single-post .post-content .ui-title {
-      color: #243548; }
+      color: #252B32; }
     body.single-post .post-content aside.in-this-taxonomy {
       border-left: 2px solid #BBB;
       padding: .3rem 1rem;
@@ -5366,40 +5372,6 @@ body.single-post {
     body.single-post .post-content video, body.single-post .post-content object {
       max-width: 100%;
       height: auto; }
-    body.single-post .post-content a[href$=".jpg"],
-    body.single-post .post-content a[href$=".JPG"],
-    body.single-post .post-content a[href$=".jpeg"],
-    body.single-post .post-content a[href$=".png"],
-    body.single-post .post-content a[href$=".gif"],
-    body.single-post .post-content .image-modal-icon {
-      outline: 0;
-      position: relative;
-      text-align: center;
-      display: inline-block; }
-      body.single-post .post-content a[href$=".jpg"]:before,
-      body.single-post .post-content a[href$=".JPG"]:before,
-      body.single-post .post-content a[href$=".jpeg"]:before,
-      body.single-post .post-content a[href$=".png"]:before,
-      body.single-post .post-content a[href$=".gif"]:before,
-      body.single-post .post-content .image-modal-icon:before {
-        position: absolute;
-        top: 50%;
-        margin-top: -32px;
-        left: 0;
-        width: 100%;
-        font-size: 64px;
-        content: "\f065";
-        color: #FFFFFF;
-        opacity: 0;
-        transition: all 0.5s ease;
-        z-index: 20; }
-      body.single-post .post-content a[href$=".jpg"]:hover:before,
-      body.single-post .post-content a[href$=".JPG"]:hover:before,
-      body.single-post .post-content a[href$=".jpeg"]:hover:before,
-      body.single-post .post-content a[href$=".png"]:hover:before,
-      body.single-post .post-content a[href$=".gif"]:hover:before,
-      body.single-post .post-content .image-modal-icon:hover:before {
-        opacity: 1; }
     body.single-post .post-content blockquote {
       font-family: "Georgia Pro W01", "Georgia", serif;
       font-size: 120%;
@@ -5412,8 +5384,8 @@ body.single-post {
       font-family: "Playfair Display", "Georgia", serif;
       padding: 1rem;
       padding-left: 5rem;
-      color: #243548;
-      border-left: 10px solid #243548;
+      color: #252B32;
+      border-left: 10px solid #252B32;
       max-width: 30rem;
       float: left; }
     body.single-post .post-content pre {
@@ -5426,8 +5398,8 @@ body.single-post {
     margin: 6rem 0 1rem; }
     body.single-post aside.social-sharing hr {
       border: 0;
-      border-top: 2px solid #243548;
-      background-color: #243548;
+      border-top: 2px solid #252B32;
+      background-color: #252B32;
       height: 0px;
       width: 100%;
       margin: auto; }
@@ -5448,7 +5420,7 @@ body.single-post {
     padding: 0; }
 
 .dans-cette-categorie {
-  background: #243548;
+  background: #252B32;
   background: #FF851B;
   padding: 3rem; }
   .dans-cette-categorie h1.ui-title {
@@ -5490,9 +5462,9 @@ body.single-post {
   .vignette--noimage article {
     padding: 10px; }
     .vignette--noimage article .ui-title {
-      color: #243548; }
+      color: #252B32; }
     .vignette--noimage article .inner-padding {
-      border: 10px solid #243548;
+      border: 10px solid #252B32;
       height: 100%; }
       .vignette--noimage article .inner-padding h1 {
         text-align: center;
@@ -5543,7 +5515,15 @@ body.single-post {
       transform: scale(1.05); }
 
 .dark-blue-background {
-  background: #243548;
+  background: #252B32;
+  color: #FFFFFF; }
+  .dark-blue-background a {
+    color: #FFFFFF; }
+
+.dark-blue-background.post-sharing-zone .ui-title {
+  color: #FFFFFF;
+  font-weight: normal; }
+.dark-blue-background.post-sharing-zone a {
   color: #FFFFFF; }
 
 .site-footer,
@@ -5561,15 +5541,64 @@ body.single-post {
 .sitemap ol, .sitemap li {
   list-style: none;
   padding-left: 0; }
-.sitemap ol ol {
+.sitemap ol {
   margin: 2rem 0 3rem; }
 
 .site-footer {
-  border-top: 1px solid #2d4259;
+  border-top: 1px solid #303841;
   padding-top: 0;
-  color: #4f749d;
+  color: #5b6a7b;
   font-size: 90%;
   line-height: 1.4; }
+
+/*  ICONS IN CONTENT */
+/* Show a Lens icon on hovering image links */
+a[href$=".jpg"],
+a[href$=".JPG"],
+a[href$=".jpeg"],
+a[href$=".png"],
+a[href$=".gif"],
+.image-modal-icon,
+.karoo-tv-play-icon {
+  outline: 0;
+  position: relative;
+  text-align: center;
+  display: inline-block; }
+  a[href$=".jpg"]:before,
+  a[href$=".JPG"]:before,
+  a[href$=".jpeg"]:before,
+  a[href$=".png"]:before,
+  a[href$=".gif"]:before,
+  .image-modal-icon:before,
+  .karoo-tv-play-icon:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    left: 0;
+    width: 100%;
+    font-size: 64px;
+    content: "\f065";
+    color: #FFFFFF;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 20; }
+  a[href$=".jpg"]:hover:before,
+  a[href$=".JPG"]:hover:before,
+  a[href$=".jpeg"]:hover:before,
+  a[href$=".png"]:hover:before,
+  a[href$=".gif"]:hover:before,
+  .image-modal-icon:hover:before,
+  .karoo-tv-play-icon:hover:before {
+    opacity: 1; }
+
+.karoo-tv-play-icon {
+  margin: 0;
+  margin-right: 2rem; }
+  .karoo-tv-play-icon img {
+    background: white; }
+  .karoo-tv-play-icon:before {
+    content: "\f16a";
+    opacity: .5; }
 
 .badge {
   position: relative; }

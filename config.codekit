@@ -113,6 +113,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/karootv-420x233.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146755,
+		"inputAbbreviatedPath": "\/img\/karootv-420x233.png",
+		"outputAbbreviatedPath": "\/img\/karootv-420x233.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/logo-karoo-clean.png": {
 		"fileType": 32768,
 		"ignore": 0,

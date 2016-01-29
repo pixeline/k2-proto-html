@@ -417,6 +417,30 @@ span.ui-title{
 
 .size-medium{width:50%;max-width:100%;height:auto;}
 
+.post-sharing-zone{
+	border:2px solid $deep-blue;
+	margin-top:0.6rem;
+	padding:0;
+	line-height: 1;
+	.sharing-cta{padding:0 .3rem 0;}
+	.ui-title{
+		font-family: $font-ui;
+		margin-top:0;
+	}
+	.ui-title,a{
+		margin-top:0;
+		color:$deep-blue;
+	}
+
+	.social-menu i.fa{
+		margin:.5rem .1rem 0.2rem;
+	}
+}
+.post-sharing-zone.end-article{
+	max-width:300px;
+	margin:auto;
+	background:white;
+}
 
 /*
 	SINGLE POST CONTENT CSS
@@ -455,30 +479,6 @@ body.single-post{
 			padding-top:0;
 			margin-top:0;
 		}
-	}
-	.post-sharing-zone{
-		border:2px solid $deep-blue;
-		margin-top:0.6rem;
-		padding:0;
-		line-height: 1;
-		.sharing-cta{padding:0 .3rem 0;}
-		.ui-title{
-			font-family: $font-ui;
-			margin-top:0;
-		}
-		.ui-title,a{
-			margin-top:0;
-			color:$deep-blue;
-		}
-	
-		.social-menu i.fa{
-			margin:.5rem .1rem 0.2rem;
-		}
-	}
-	.post-sharing-zone.end-article{
-		max-width:300px;
-		margin:auto;
-		background:white;
 	}
 
 	.post-content{
@@ -592,38 +592,6 @@ body.single-post{
 		video, object {
 			max-width: 100%;
 			height: auto;
-		}
-		/*  ICONS IN CONTENT */
-		/* Show a Lens icon on hovering image links */
-		a[href$=".jpg"],
-		a[href$=".JPG"],
-		a[href$=".jpeg"],
-		a[href$=".png"],
-		a[href$=".gif"],
-		.image-modal-icon{
-			outline:0;
-			position:relative;
-			text-align: center;
-			display:inline-block;
-			&:before{
-				@extend .fa;
-				@extend .text-shadow;
-				position:absolute;
-				top:50%;
-				margin-top:-32px;
-				left:0;
-				width:100%;
-				font-size:64px;
-				content:"\f065";
-				color:$white;
-				opacity:0;
-				transition: all 0.5s ease;
-				z-index: 20;
-			}
-			&:hover:before{
-				opacity:1;
-			}
-
 		}
 		blockquote{
 			font-family:$font-text;
@@ -790,8 +758,20 @@ body.single-post{
 
 // FIN SINGLE-POST
 .dark-blue-background{
-	background:$deep-blue;
+	background:#252B32;
 	color:$white;
+	a{
+		color:$white;
+	}
+}
+.dark-blue-background.post-sharing-zone {
+	.ui-title{
+		color:$white;
+		font-weight: normal;	
+	}
+	a{
+		color:$white;
+	}
 }
 .site-footer,
 .sitemap{
@@ -816,15 +796,62 @@ body.single-post{
 		list-style: none;
 		padding-left:0;
 	}
-	ol ol{
+	ol{
 		margin:2rem 0 3rem;
 	}
+	
 }
 .site-footer{
 	border-top:1px solid lighten($deep-blue,5%);
 	padding-top:0;
 	color:lighten($deep-blue,25%);
 	font-size:90%;line-height: 1.4
+}
+
+/*  ICONS IN CONTENT */
+/* Show a Lens icon on hovering image links */
+a[href$=".jpg"],
+a[href$=".JPG"],
+a[href$=".jpeg"],
+a[href$=".png"],
+a[href$=".gif"],
+.image-modal-icon{
+	outline:0;
+	position:relative;
+	text-align: center;
+	display:inline-block;
+	&:before{
+		@extend .fa;
+		@extend .text-shadow;
+		position:absolute;
+		top:50%;
+		margin-top:-32px;
+		left:0;
+		width:100%;
+		font-size:64px;
+		content:"\f065";
+		color:$white;
+		opacity:0;
+		transition: all 0.5s ease;
+		z-index: 20;
+	}
+	&:hover:before{
+		opacity:1;
+	}
+
+}
+.karoo-tv-play-icon{
+	margin:0;
+	margin-right:2rem;
+	@extend .image-modal-icon;
+
+	img{
+		background:white;
+	}
+	&:before{
+		content: "\f16a";
+		opacity:.5;
+	}
 }
 .badge {
    position:relative;
