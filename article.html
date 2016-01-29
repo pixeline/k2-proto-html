@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- jaf bernina @ typekit + Playfair display @ GoogleWebFont -->
+    <script src="https://use.typekit.net/ujx5okk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){};
+    WebFontConfig = { google: { families: [ 'Playfair+Display:400,700italic,400italic,700:latin' ] }};
+    (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+    })(); 
+    </script>
+    <!-- georgia @ fonts.com -->
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/a41cd39a-be74-400c-b831-3cbd9c2f069f.js"></script>
+    <title>K2 prototype</title>
+    <link rel="stylesheet" href="css/karoo.css">
+</head>
+
+<body class="single-post">
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1xxxxx34xx26x0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+	<header id="js-site-header" class="headroom headroom--small hide-from-print">
+        <div class="header pure-g maximum-width">
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-4 logo-home">
+                <a href="/"><img src="img/logo-karoo-clean.svg" alt="Karoo - Ecosystème Culturel"></a>
+            </div>
+
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 menus-milieu">
+                <nav class="pure-menu pure-menu-horizontal rubrique-menu pure-menu-scrollable">
+                    <ul class="rubriques pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link">Cinéma</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link">Livres</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link">Scène</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link pure-menu-selected">Musique</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link">Art &amp; Ko</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file" class="pure-menu-link">Galerie</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="pure-menu pure-menu-horizontal breadcrumb-menu">
+                    <ul class="breadcrumb pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="path/to/file">Accueil</a> <span class="sep">&gt;</span>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="path/to/file">Musique</a> <span class="sep">&gt;</span>
+                        </li>
+
+                        <li class="pure-menu-item">Paradis Sauvage de Paul Verlaine</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4 header-right">
+                <div class="pure-menu pure-menu-horizontal social-menu-wrapper">
+                    <ul class="pure-menu-list social-menu">
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link email"><i class="fa fa-envelope"></i><span class="hide-for-mobile">Tenez-moi au courant</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="searchform">
+                    <form class="pure-form">
+                        <input type="text" class="pure-input-rounded search-input" name="s" placeholder="Chercher dans Karoo">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header><canvas id="canvas"></canvas>
+
+    <article class="post" data-author-article-amount="3" data-category-color="#FF851B" data-article-wordcount="71" data-article-type="critique" data-article-publication-date="#FFFFFF" id="post-9845">
+        <div class="splash-zone">
+            <div class="splash">
+                <h1 class="splash-head">Parade sauvage de Paul Verlaine</h1>
+
+                <p class="splash-subhead"><a href="lien-vers-le-digest">18 décembre 2015</a> par <a href="___auteur__" class="meta-author popup" title="&lt;strong&gt;Virginie Lefbvre&lt;/strong&gt; &lt;p&gt;Diplômée de l’U.L.B. en littérature française et anglaise, passionnée d’art contemporain et de cinéma, je vis à Amsterdam depuis 2011 où j’ai terminé un MA en Anthropologie sociale et culturelle.&lt;/p&gt;"><img class="portrait-author" src="img/portrait-auteur_96x96.jpg" alt=""><span class="author-name">Virginie Lefebvre</span></a> dans <a href="__rubrique">Scène</a> | temps de lecture: 7 minutes</p>
+            </div>
+        </div>
+
+        <div class="content-zone maximum-width">
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-lg-3-4 post-content-wrapper">
+                    <div class="pure-g post-introduction">
+                        <div class="pure-u-md-5-12">
+                            <figure class="post-sharing-zone">
+                                <img src="img/post-thumbnail-300x300.png" alt="" class="pure-img-responsive">
+
+                                <div class="sharing-cta">
+                                    <span class="ui-title">Partager cet article sur</span>
+
+                                    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+                                        <ul class="pure-menu-list social-menu">
+                                            <li class="pure-menu-item">
+                                                <a href="path/to/file" class="pure-menu-link facebook"><i class="fa fa-facebook"></i></a>
+                                            </li>
+
+                                            <li class="pure-menu-item">
+                                                <a href="path/to/file" class="pure-menu-link twitter"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pure-menu-item">
+                                                <a href="path/to/file" class="pure-menu-link reddit"><i class="fa fa-reddit-alien"></i></a>
+                                            </li>
+                                            <li class="pure-menu-item">
+                                                <a href="path/to/file" class="pure-menu-link googleplus"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li class="pure-menu-item">
+                                                <a href="path/to/file" class="pure-menu-link linkedin"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="pure-u-md-7-12">
+                            <p class="accroche">L’automne du musée des Beaux-arts de Mons (BAM) est foulé par « Verlaine, cellule 252. Turbulences poétiques » et « Parade sauvage », deux expositions aux discours forts avec pour fil rouge leur poésie singulière.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <aside class="in-this-taxonomy">
+                            <legend class="ui-title">Feuilleton</legend>
+
+                            <h1><a href="_taxonomie/slug">Europalia Turquie</a></h1><img src="img/europalia-212x212.png" width="212" height="212" alt="Europalia turquie">
+
+                            <ol style="counter-reset:taxonomie 4;" class="taxonomy-link-list">
+                                <li>
+                                    <a title="Résumé de l'article en question. Et si vous lisiez cet article, vous deviendrez quelqu'un de fréquentable. Si, si." href="path/to/file" class="popup">Musée Soulages : le noir et l’acier</a>
+                                </li>
+
+                                <li class="selected">
+                                    <a href="path/to/file">Parade sauvage de Paul Verlaine</a>
+                                </li>
+
+                                <li>
+                                    <a title="Résumé de cet article là. Et si vous lisiez cet article, vous deviendrez quelqu'un de fréquentable. Si, si." class="popup" href="path/to/file">Les artistes déplient l’histoire</a>
+                                </li>
+                            </ol>
+                        </aside>
+
+                        <h2>Verlaine, cellule 252. Turbulences poétiques</h2>
+
+                        <p>Pour celles et ceux qui les connaissent, Paul Verlaine et Arthur Rimbaud représentent un dipôle célèbre pour leur <a href="dfd">histoire d’amour passionnée</a> et dévorante. Aujourd’hui, force est de constater que la notoriété de Rimbaud dépasse celle de son amant. Le souhait de Bernard Boussmane, commissaire de l’exposition, a été de mettre en lumière Paul Verlaine, et de briser la vision terne que le public aurait pu avoir de lui.</p>
+                        
+                        
+
+                        <p>L’exposition débute par la sulfureuse histoire d’amour du couple et nous montre également <strong>l’émulation littéraire ayant eu lieu entre les deux hommes</strong>. Puis vient « l’Affaire de Bruxelles », épisode douloureux durant lequel Verlaine tire sur <em>« Rimbe »</em> et le blesse au poignet. Alors que ce dernier ne désire pas porter plainte, Paul Verlaine a la malchance d’être confronté au juge Théodore t’Serstevens.<a class="" href="img/image-positioner.jpg" title="Yolo buddy!"><img src="img/attachment1-image.jpg" alt=""></a> Ce dernier, après avoir lu les lettres échangées entre les deux poètes, décide de mener une lourde et humiliante enquête sur Verlaine qui sera jugé et inculpé pour ses mœurs immorales pour l’époque. Condamné à deux ans de prison, Verlaine est incarcéré à Mons.</p>
+                        
+                        <figure>
+                        <img src="img/attachment1-image.jpg" alt="">
+
+                            <figcaption>
+                                Image avec une Description
+                            </figcaption>
+                        </figure>
+
+                        <p>Même si sa détention dans l’une des premières prisons cellulaires est douloureuse, cet épisode est néanmoins bénéfique pour la plume du poète au vu des ses magnifiques créations carcérales comme l’illustre sublimement le poème Crimen Amoris. Après son emprisonnement dans « le meilleur des châteaux », l’exposition nous permet de suivre le quotidien de l’écrivain, <img src="img/attachment1-image.jpg" alt="" class="alignleft size-medium"> écumant les cafés devenus ses refuges, sa reconnaissance croissante au sein du monde littéraire, jusqu’à son retour, vingt années plus tard en Belgique, période durant laquelle il donnera une série de conférences.</p>
+                        <p>Outre l’intéressante histoire que nous livre Bernard Bousmanne, la richesse de l’exposition « Verlaine, cellule 252 » réside dans la présence des différentes pièces réunies. Nous sommes subjugués par la beauté des lettres que se sont écrites les deux amants, effarés par les différentes pièces à conviction du procès de Verlaine, et mal à l’aise face aux huit portes qui encerclaient sa cellule. De plus, cette exposition nous offre la contemplation de pièces inédites comme le revolver le plus célèbre de la littérature française, ainsi qu’une photographie du poète, alors âgé d’une vingtaine d’années, totalement méconnue du public.</p>
+<blockquote class="big">En soi, The Hateful Eight n’est pas un mauvais film.</blockquote>
+
+                        <p>Au-delà de la dureté de certains épisodes de la vie de Paul Verlaine, l’exposition met en lumière la délicatesse et le talent indéniable que revêtent les œuvres de ce poète parfois oublié.</p>
+                        
+                        <p>Au-delà de la dureté de certains épisodes de la vie de Paul Verlaine, l’exposition met en lumière la délicatesse et le talent indéniable que revêtent les œuvres de ce poète parfois oublié. Au-delà de la dureté de certains épisodes de la vie de Paul Verlaine, l’exposition met en lumière la délicatesse et le talent indéniable que revêtent les œuvres de ce poète parfois oublié.</p>
+
+                        <h2>Parade sauvage</h2>
+                        <p>« J’ai seul la clef de cette parade sauvage. » Voici le vers d’Arthur Rimbaud ayant inspiré le commissaire, et futur directeur du musée des Arts contemporains du Grand Hornu, Denis Gielen, pour le titre de son exposition « Parade sauvage ». Cette dernière rend hommage à différents artistes européens et américains dont les œuvres se sont inscrites dans une insurrection anti-conformiste, et s’articulent autour de cinq lignes de fuite, attestant de l’ensauvagement qu’a pu subir l’art durant les sixties.
+                        </p>
+
+                        <p>L’exposition inaugurée par une « maltraitance » de la peinture académique, se poursuit par une fusion de l’Homme et de la nature, par le saccage de l’iconographie d’une société de consommation, par le questionnement sur l’identité sexuelle, pour se clore par des performances empreintes de ritualisme, parfois très sauvage.</p>
+<blockquote>Le souhait de Bernard Boussmane, commissaire de l’exposition, a été de mettre en lumière Paul Verlaine, et de briser la vision terne que le public aurait pu avoir de lui.</blockquote>
+                        <p>Le musée des Beaux-Arts de Mons, avec ce parcours initiatique, nous offre une belle collection et permet d’entrevoir la contre-culture de l’époque. L’utilisation de nouveaux médiums est tout à fait saisissante et est remarquablement bien illustrée par Gaston Chaissac et son personnage naïf peint sur une écorce d’arbre, ou par la transformation émouvante d’affiches lacérées en œuvres d’art par Mimmo Rotella.</p>
+
+                        <p>L’inversion des genres est magnifiquement capturée sur la pellicule de Nan Goldin, nous donnant presque l’envie d’enfiler pour une nuit les talons hauts du travesti Crystal. Les performances des actionnistes viennois nous glacent le sang par la cruauté et la sauvagerie qui en émanent. Enfin, l’œuvre vidéographique de Dennis Oppenheim, faisant tournoyer sa fille Chandra dans les airs, nous émeut, et se trouve sacralisée par la blancheur parfaite des murs du musée. « Parade sauvage » nous offre une multitude d’œuvres empreintes d’un discours fort, ainsi que d’une émotion glaçante. Néanmoins, il serait intéressant de s’interroger quelques instants sur la scénographie adoptée par le musée montois, qui met en lumière un problème coutumier des expositions d’art contemporain.</p>
+
+                        <p>Le white cube, paysage scénographique associé à l’art contemporain, est devenu ces dernières décennies la norme au sein des différents lieux d’exposition. Celui-ci se présente sous la forme de murs blancs immaculés sur lesquels s’inscrivent le moins possible de textes. « Parade sauvage » ne déroge pas à cette règle et s’intègre, comme l’on peut s’y attendre, dans un système expositionnel récurrent. Même si l’exposition présente une très belle collection, celle-ci s’exprime avec peu d’originalité.</p>© Jean-François Berhin © Jean-François Berhin
+
+                        <p>Ensuite, cette scénographie, ou plutôt son absence, engendre un problème de taille. Le cube blanc accompagne une idéologie reposant sur un lien qui tente de s’établir entre l’œuvre d’art et le spectateur lorsque celui-ci la contemple. De ce fait, il ne faudrait surtout pas parasiter cette union par une décoration bactérienne ou des mots inutiles. Notons qu’un musée ne se sert pas nécessairement du white cube pour exprimer cette idéologie, mais cette dernière l’utilise fréquemment comme vecteur. Ensuite, certains penseront qu’une œuvre d’art parle d’elle-même et ne doit pas forcément être utilisée comme la pièce à conviction d’un discours ou d’une problématique expositionnelle, ce que l’on peut comprendre et envisager. Le problème de cette idéologie est que le public visé est composé de personnes érudites. Le visiteur doit nécessairement amener son bagage intellectuel lorsqu’il se rend dans ce type d’exposition pour en comprendre le sens. L’art contemporain est par essence un art difficile d’accès, celui-ci étant intimement lié aux doctrines et philosophies de ses créateurs. Il suscite aujourd’hui un attrait chez une population très mince, quand le reste de celle-ci le perçoit comme un art prétentieux et élitiste. Le public a besoin de disposer de clefs afin d’être touché par cet art et il est, dans une certaine mesure, de la mission du musée de les apporter aux visiteurs. De plus, il serait légitime d’attendre d’une telle institution qu’elle vise à instruire tout type de visiteur et non seulement à contenter une poignée d’initiés. Malheureusement aujourd’hui, optant pour une non-intervention visuelle dans un souci de respect de l’œuvre d’art, rares sont les institutions s’affranchissant du white cube. Il semblerait néanmoins que la norme commence doucement à s’essouffler dans les consciences, certains musées apposant des couleurs audacieuses sur leurs cimaises et développant leur médiation.</p>
+
+                        <p>Dans le cadre de Mons 2015, capitale européenne de la culture, le musée des Beaux-Arts de Mons nous propose deux expositions en miroir. Qu’il s’agisse du XIXe ou du XXe siècle, que l’on parle d’un poète sulfureux ou de plasticiens contestataires, ce qui rassemble ces deux expositions est l’anticonformisme mêlé à la beauté. Et même si l’on pourrait trouver à y redire, les différentes salles de « Verlaine, cellule 252 » et de « Parade sauvage » méritent, sans aucun doute, d’être parcourues.</p>
+                        <p>Les deux expositions seront ouvertes au public jusqu’au 24 janvier 2016.</p>
+                    </div>
+
+                    <aside class="social-sharing">
+                        <hr>
+
+                        <div class="post-sharing-zone end-article">
+                            <div class="sharing-cta">
+                                <span class="ui-title">Partager cet article sur</span>
+
+                                <div class="pure-menu pure-menu-horizontal">
+                                    <ul class="pure-menu-list social-menu">
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link facebook"><i class="fa fa-facebook"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link twitter"><i class="fa fa-twitter"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link linkedin"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link googleplus"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link reddit"><i class="fa fa-reddit-alien"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div id="js-finished-reading" class="pure-g finished-reading maximum-width">
+            <section class="post-author-zone pure-u-1 pure-u-sm-11-24">
+                <div class="pure-g">
+                    <div class="pure-u-1-3">
+                        <p><img src="img/portrait-auteur_96x96.jpg" class="portrait-author" alt=""></p>
+                    </div>
+                    <div class="pure-u-2-3">
+                        <div class="inner-padding">
+                            <h2><span class="ui-title">L'auteur</span>Virginie Lefebvre</h2>
+
+                            <p>Je suis actuellement étudiante en Histoire de l'art et archéologie à l'Université de Liège. Mon passe-temps favori se situe entre sueur et mouvements chaloupés, dans la fosse d'une salle de concert. Passionnée par les voyages, je n'aspire qu'à voir, entendre, sentir, toucher et goûter aux quatre coins du globe.</p>
+
+                            <h3>Ses derniers articles</h3>
+
+                            <ol class="author-latest-list">
+                                <li>
+                                    <a href="path/to/file">Voici le titre de l'article 1</a>
+                                </li>
+
+                                <li>
+                                    <a href="path/to/file">Voici le titre de l'article 1</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="pure-u-1 pure-u-sm-1-12">
+                &nbsp;
+            </div>
+
+            <section class="pure-u-1 pure-u-sm-11-24">
+	            <div class="inner-padding">
+                <h2><span class="ui-title">Vos réactions</span>Commentaires</h2>
+
+                <p>À votre tour de nous dire ce que vous en pensez, en toute subjectivité...</p><button id="js-show-comments-button" class="pure-button pure-button-primary badge" data-badge="3"><i id="js-comment-icon" class="fa fa-comments-o"></i> Réagir</button>
+
+                <div id="js-comments-zone" class="comments-zone" style="padding:0 1rem;overflow-x:hidden;overflow-y: auto">
+                    <div class="fb-comments" data-width="100%" data-href="https://karoo.me/propose/the-hateful-eightencore-quelquesclins-doeil-de-plus" data-numposts="3"></div>
+                </div>
+	            </div>
+            </section>
+        </div>
+    </article>
+
+    <aside id="js-prev-next-links-wrapper">
+        <a class="arrow-left" href="___"><span class="ui-title">article précédent</span>
+
+        <article class="pure-g">
+            <div class="pure-u-1-2"><img src="img/arrow-vignette.png" alt="Article précédent de Scène"></div>
+
+            <div class="pure-u-1-2">
+                <h1>Les espoirs 2016 de Krisztina Kovacs</h1>
+            </div>
+        </article></a>
+        <a class="arrow-right" href="___">
+	        <span class="ui-title">article suivant</span>
+	        <article class="pure-g">
+            	<div class="pure-u-1-2"><img src="img/arrow-vignette.png" alt="Article précédent de Scène"></div>
+				<div class="pure-u-1-2">
+                	<h1>Les espoirs 2016 de Krisztina Kovacs</h1>
+				</div>
+        </article>
+		</a>
+    </aside>
+
+    <section class="dans-cette-categorie">
+        <h1 class="ui-title">Vous aimerez...</h1>
+
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                <a href="path/to/file" class="vignette">
+	                <article>
+		                <div class="img-clipper">
+			                <div class="image-fill" style="background-image:url(img/post-thumb-default.png);"></div>		                
+		                </div>
+		                <div class="inner-padding">
+		                <h1>Mise en quarantaine</h1>
+						<p class="meta--author"><img src="img/portrait-auteur2.jpg" class="portrait-author" alt=""><br>par Jimmy Wodon</p>
+		                </div>
+					</article>
+                </a>		            
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                <a href="path/to/file" class="vignette">
+	                <article>
+		                <div class="img-clipper">
+			                <div class="image-fill" style="background-image:url(img/post-thumb-default.png);"></div>
+						</div>
+		                <div class="inner-padding">
+			                <h1>Sous le regard d’un dieu déchu l’eau rage</h1>
+							<p class="meta--author"><img src="img/portrait-auteur2.jpg" class="portrait-author" alt=""><br>par Jimmy Wodon</p>
+						</div>
+					</article>
+                </a>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                <a href="path/to/file" class="vignette vignette--noimage">
+	                <article>
+		                <div class="inner-padding">
+			                <h2 class="ui-title">Cinéma</h2>
+		                <h1>Flavien Berger<br>Rendez-vous sur une planète inconnue</h1>
+		                <p class="meta--author"><img src="img/portrait-auteur2.jpg" class="portrait-author" alt=""><br>par Jimmy Wodon</p>
+		                </div>
+	                </article>
+	            </a>
+            </div>
+
+            <div class="pure-u-1 vignette-wide">
+	            <a href="path/to/file" class="vignette vignette--wide">
+	                <article class="pure-g">
+		                <div class="pure-u-1-3 pure-u-md-2-3">
+			                <div class="img-clipper">
+				                <div class="image-fill" style="background-image:url(img/post-thumb-wide.jpg);"></div>
+			                </div>
+		                </div>
+		                <div class="pure-u-2-3 pure-u-md-1-3">
+			                <div class="inner-padding">
+				                <h1>Flavien Berger<br>Rendez-vous sur une planète inconnue</h1>
+								<p class="meta--author"><img src="img/portrait-auteur2.jpg" class="portrait-author" alt=""><br>par Jimmy Wodon</p>
+							</div>
+						</div>
+	                </article>
+	            </a>
+            </div>
+            
+            <div class="pure-u-1" style="text-align:center"><a href="/" class="pure-button pure-button-primary popup button-xlarge" title="Voir les derniers arrivages"><i class="fa fa-home"></i> Plus d'articles</a></div>
+	            
+            </div>
+        </div>
+    </section>
+<div class="dark-blue-background">
+		     <nav class="sitemap maximum-width pure-g">
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+					     <a href="/categorie/cinema" class="ui-title">Cinéma</a>
+			     <ol>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+				     </div>
+			     </div>
+
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+			     <a href="/categorie/musique" class="ui-title">Musique</a>
+			     <ol>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+				     </div>
+			     </div>
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+			     <a href="/categorie/livres" class="ui-title">Livres</a>
+			     <ol>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+				     </div>
+			     </div>
+			     
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+			     <a href="/categorie/scene" class="ui-title">Scène</a>
+			     <ol>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+
+				 <nav class="pages-menu">
+					 <a href="/presentation/karoo" class="ui-title">Karoo</a>
+					 <ol>
+				     	<li><a href="	">À propos</a></li>
+					 	<li><a href="	">Les rédacteurs</a></li>
+					 	<li><a href="	">Contact</a></li>
+					 	</ol>
+				 </nav>
+				 
+				 <div class="post-sharing-zone dark-blue-background">
+                            <div class="sharing-cta">
+                                <span class="ui-title">Suivre Karoo</span>
+
+                                <div class="pure-menu pure-menu-horizontal">
+                                    <ul class="pure-menu-list social-menu">
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link facebook"><i class="fa fa-facebook"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link twitter"><i class="fa fa-twitter"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link linkedin"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link googleplus"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+
+                                        <li class="pure-menu-item">
+                                            <a href="path/to/file" class="pure-menu-link reddit"><i class="fa fa-reddit-alien"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+				     </div>
+			     </div>
+
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+			     <a href="/categorie/art-and-ko" class="ui-title">Art & Ko</a>
+			     <ol>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+				     <li><a href="	">This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+			     
+			     <a href="	" class="ui-title">Sur Karoo TV</a>
+			     <ol>
+				     <li><a href="	" class="karoo-tv-play-icon"><img src="img/karootv-420x233.png" alt="" class="pure-img-responsive"></a></li>
+			     </ol>
+				     </div>
+			     </div>
+			     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+				     <div class="inner-padding">
+			     <a href="	" class="ui-title">Galerie</a>
+			     <ol>
+				     <li><a href="	"><img src="img/galerie-format-420x420.jpg" alt=""><br>
+					     This is Christmas (06) Plus d’un siècle de Scrooge</a></li>
+			     </ol>
+				     </div>
+			     </div>			     
+			     
+
+
+	     </nav>
+    <footer class="site-footer maximum-width" role="contentinfo">
+
+                <p style="padding:1em">Karoo est un outil d' Indications ASBL, dont l’objectif est d’éveiller l’esprit critique des jeunes et de les sensibiliser par la pratique aux différents langages artistiques. Une initiative rendue possible grâce au soutien de la fédération Wallonie-Bruxelles.</p>
+
+                <p style="padding:1em">&copy; 2016 Indications ASBL</p>
+
+    </footer>
+</div>
+
+      <div class="progress-indicator"></div>  
+    <script src="js/min/karoo-v2-min.js">
+</script>
+</body>
+</html>

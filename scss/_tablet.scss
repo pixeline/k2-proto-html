@@ -1,3 +1,9 @@
+/*
+	Tablet
+	Resolution >= 1024px
+	
+*/
+
 .maximum-width{
 	max-width:1200px;
 	margin:auto;
@@ -17,6 +23,7 @@
 }
 .splash-head {
         font-size: 250%;
+        padding:0 60px;
 }
 
 body.single-post .post-content{
@@ -25,8 +32,7 @@ body.single-post .post-content{
 		max-width:30rem;
 		float:left;
 		margin:1rem 0;
-		padding:0 1rem;
-		padding-left:5rem;
+		padding:0 2rem 0 4rem;
 		font-size:200%;
 		line-height: 1.2;
 	}
@@ -37,7 +43,6 @@ body.single-post .post-content{
 
 
 /* BACK/NEXT ARROWS */
-
 #js-prev-next-links-wrapper{
-	display:auto;
+	display:block;
 }
