@@ -5031,14 +5031,15 @@ p.slogan {
     line-height: 100%;
     margin-top: 50%;
     transform: translateY(-50%);
-    display: block; }
+    display: block;
+    padding: 0 10px; }
   .circle--big {
     width: 180px;
     height: 180px; }
   .circle--biggest {
-    width: 320px;
-    height: 320px;
-    font-size: 2rem; }
+    width: 180px;
+    height: 180px;
+    font-size: 1.5rem; }
   .circle:hover {
     transition: none;
     background-color: #FFFFFF;
@@ -5153,7 +5154,7 @@ a.circle-button.vrak:hover{
     text-align: center;
     background: white;
     display: block;
-    height: 500px; }
+    min-height: 500px; }
   .vignette h1 {
     font-family: "Playfair Display", "Georgia", serif;
     font-weight: normal;
@@ -5185,7 +5186,8 @@ a.circle-button.vrak:hover{
       -webkit-transform: scale(1.05);
       transform: scale(1.05); }
   .vignette--noimage article {
-    padding: 10px; }
+    padding: 10px;
+    height: 500px; }
     .vignette--noimage article .ui-title {
       color: #252B32; }
     .vignette--noimage article .inner-padding {
@@ -5252,6 +5254,7 @@ a.circle-button.vrak:hover{
       content: "___"; }
     .vignette--textuelle article {
       height: auto;
+      min-height: inherit;
       background: none;
       box-shadow: none;
       -moz-transition: none;
@@ -5278,18 +5281,18 @@ a.circle-button.vrak:hover{
         -webkit-transition: none;
         transition: none; }
   .vignette--bandelette article, .vignette--bandelette a {
-    height: 100px;
     padding: 0;
     margin: 0;
-    overflow: hidden;
-    position: relative; }
+    position: relative;
+    height: auto;
+    min-height: 150px;
+    overflow: auto; }
   .vignette--bandelette .img-clipper,
   .vignette--bandelette .inner-padding {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    height: 100px;
     z-index: 2;
     padding: 0; }
   .vignette--bandelette .img-clipper {
@@ -5332,13 +5335,15 @@ a.circle-button.vrak:hover{
       font-weight: bold;
       color: #444444; }
   .vignette--mediaplayer article {
-    height: auto; }
+    min-height: 200px; }
   .vignette--mediaplayer img {
     background: none; }
   .vignette--mediaplayer a, .vignette--mediaplayer ol, .vignette--mediaplayer li {
     list-style: none;
     padding: 0;
     margin: 0; }
+  .vignette--mediaplayer .image-fill {
+    height: 300px; }
   .vignette--mediaplayer .img-clipper {
     height: 100%;
     display: block; }
@@ -5972,7 +5977,15 @@ body.home .circles-menu {
   a.circle-button {
     width: 120px;
     height: 120px;
-    line-height: 120px; } }
+    line-height: 120px; }
+
+  .vignette--hero .inner-padding {
+    max-width: 100%; }
+  .vignette--bandelette article, .vignette--bandelette a {
+    height: auto;
+    min-height: none;
+    max-height: none;
+    overflow: auto; } }
 @media (min-width: 64em) {
   /*
   	Tablet
@@ -6003,6 +6016,15 @@ body.home .circles-menu {
     padding: 0 2rem 0 4rem;
     font-size: 200%;
     line-height: 1.2; }
+
+  .vignette--bandelette article, .vignette--bandelette a {
+    height: 100px;
+    min-height: 100px; }
+
+  .circle--biggest {
+    width: 320px;
+    height: 320px;
+    font-size: 2rem; }
 
   /* BACK/NEXT ARROWS */
   #js-prev-next-links-wrapper {

@@ -22,7 +22,7 @@ https://siteorigin.com/page-builder/
 ## A propos du Golive et followup
 - prévoir beaucoup d'assistance et formation (car VC va créer bcp d'envies) 
 - planifier migration de la DB vers un WP unisite et de tous les fichiers sur le VPS
-
+Utiliser le Duplicator plugin: https://wordpress.org/plugins/duplicator/
 
 
 # Tester minimax

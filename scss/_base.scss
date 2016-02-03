@@ -283,15 +283,16 @@ p.slogan{
 		margin-top:50%;
 		transform:translateY(-50%);
 		display: block;
+		padding:0 10px;
 	}
 	&--big{
 		width:180px;
 		height:180px;
 	}
 	&--biggest{
-		width:320px;
-		height:320px;
-		font-size:2rem;
+		width:180px;
+		height:180px;
+		font-size:1.5rem;
 	}
 	&:hover{
 	    transition: none;
@@ -421,7 +422,13 @@ a.circle-button.vrak:hover{
 		height:250px;
 		overflow:hidden;
 	}
-	article{text-align: center;	background:white;display:block;height: 500px;@extend .transition--slow;}
+	article{
+		text-align: center;	
+		background:white;
+		display:block;
+		min-height: 500px;
+		@extend .transition--slow;
+	}
 	h1{font-family: $serif;font-weight:normal;text-align:center;letter-spacing: normal;line-height: 1.1;}
 	p.meta--author{text-align: center;}
 	.portrait-author{width:45px;margin:auto}
@@ -448,12 +455,11 @@ a.circle-button.vrak:hover{
 			@include transform(scale(1.05));
 		}
 	}
-	&--double{
-		
-	}
+
 	&--noimage{
 		article{
 			padding:10px; // to make the outter white border
+			height: 500px;
 			.ui-title{
 				color: $deep-blue;
 			}
@@ -503,10 +509,11 @@ a.circle-button.vrak:hover{
 		margin:0;
 		&:after{
 			content: "___";
-
 		}
 		article{
-			height:auto; background:none;box-shadow: none;
+			height:auto;
+			min-height:inherit;
+			background:none;box-shadow: none;
 			@include transition(none);
 		}
 		h1,p{text-align: left;}
@@ -522,11 +529,12 @@ a.circle-button.vrak:hover{
 	}
 	&--bandelette{
 		article, a{
-			height:100px;
 			padding:0;
 			margin:0;
-			overflow: hidden;
 			position:relative;
+			height:auto;
+			min-height:150px;
+			overflow: auto;
 		}
 		.img-clipper,
 		.inner-padding{
@@ -534,7 +542,6 @@ a.circle-button.vrak:hover{
 			top:0;
 			width:100%;
 			height:100%;
-			height:100px;
 			z-index:2;
 			padding:0;
 		}
@@ -586,10 +593,11 @@ a.circle-button.vrak:hover{
 			h2.ui-title{font-weight:bold;color:$dark-grey}
 		}
 		article{
-			height:auto;
+			min-height:200px;
 		}
 		img{background:none;}
 		a,ol,li{list-style: none;padding:0;margin:0;}
+		.image-fill{height:300px;}
 		.img-clipper{
 			@extend .play-icon;
 			height:100%;

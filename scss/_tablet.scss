@@ -38,9 +38,21 @@ body.single-post .post-content{
 	}
 }
 
-
-
-
+.vignette{
+	&--bandelette{
+		article, a{
+			height:100px;
+			min-height: 100px;
+		}
+	}
+}
+.circle{
+	&--biggest{
+		width:320px;
+		height:320px;
+		font-size:2rem;
+	}
+}
 
 /* BACK/NEXT ARROWS */
 #js-prev-next-links-wrapper{

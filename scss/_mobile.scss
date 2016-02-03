@@ -16,3 +16,18 @@ a.circle-button{
 	height:120px;
 	line-height: 120px;
 }
+
+
+.vignette{
+	&--hero{
+		.inner-padding{max-width:100%;}
+	}
+	&--bandelette{
+		article,a{
+			height:auto;
+			min-height: none;
+			max-height: none;
+			overflow: auto;
+		}
+	}
+}
